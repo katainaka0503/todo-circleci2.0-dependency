@@ -7,7 +7,7 @@ RUN set -x && \
 # aws-cli
 RUN apt-get install -y python && \
   apt-get install -y python-pip && \
-  pip install --upgrade --user awscli awscli
+  pip install --upgrade awscli
 
 # java8
 RUN set -x && \
