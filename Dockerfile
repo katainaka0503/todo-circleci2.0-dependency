@@ -3,6 +3,9 @@ FROM ubuntu:16.04
 # update
 RUN set -x && \
   apt-get update
+  
+# jq
+RUN apt-get install -y jq
 
 # aws-cli
 RUN apt-get install -y python && \
